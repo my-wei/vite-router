@@ -2,14 +2,15 @@
  * @Author: gq
  * @Date: 2022-01-23 19:57:41
  * @LastEditors: gq
- * @LastEditTime: 2022-01-23 22:26:52
+ * @LastEditTime: 2022-01-23 23:09:52
  * @Description: file content
  */
 import { defineConfig, loadEnv } from 'vite'
 
-import vue from '@vitejs/plugin-vue'
+// import vue from '@vitejs/plugin-vue'
 import alias from './vite/alias';
 import { parseEnv } from './vite/utils';
+import setupPlugins from './vite/plugins';
 // https://vitejs.dev/config/
 // export default defineConfig({
 //   plugins: [vue()],
@@ -28,7 +29,8 @@ export default ({ command, mode }) => {
   console.log((env));
   // parseEnv(env);
   return {
-    plugins: [vue()],
+    // plugins:  [vue()],
+    plugins: setupPlugins(isBuild, env),
     resolve: {
       alias,
     }
