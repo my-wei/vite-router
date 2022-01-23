@@ -1,9 +1,10 @@
 <script setup>
+console.log(import.meta.env)
 </script>
 
 <template>
   <div>
-      <ul>
+      <ul class="bg-red-50">
         <li>首页</li>
         <li>商品</li>
         <li>样式</li>
