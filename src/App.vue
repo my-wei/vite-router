@@ -5,10 +5,7 @@
  * @LastEditTime: 2022-01-24 23:17:33
  * @Description: file content
 -->
-<script setup>
-import helper from "@/types/helper";
-console.log(helper);
-</script>
+
 
 <template>
   <div>
@@ -21,6 +18,18 @@ console.log(helper);
     <router-view></router-view>
   </div>
 </template>
+<script setup>
+import helper from "@/types/helper";
+import {info} from '@/api/user';
+// console.log(info());
 
+info().then(res=>{
+  console.log(res);
+})
+
+
+
+
+</script>
 <style>
 </style>

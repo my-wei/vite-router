@@ -20,13 +20,13 @@ import setupPlugins from './vite/plugins';
 // })
 
 export default ({ command, mode }) => {
-  const isBuild = command = "build";
+  const isBuild = command == "build";
   const root = process.cwd();
   const env = parseEnv(loadEnv(mode, root));
 
 
 
-  console.log((env));
+  // console.log(command);
   // parseEnv(env);
   return {
     // plugins:  [vue()],

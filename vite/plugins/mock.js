@@ -9,8 +9,10 @@ import { viteMockServe } from 'vite-plugin-mock'
 
 export function setupMockPlugin(isBuild) {
 
+    console.log(isBuild,233);
     return viteMockServe({
         // default
+    
         mockPath: 'mock',
         localEnabled: !isBuild,
     })
