@@ -13,7 +13,7 @@ export default class Axios {
         return new Promise(async (res, rej) => {
             try {
                 const response = await this.instance.request(data);
-                console.log(response.data,2)
+                
                 res(response.data);
             } catch (err) {
                 rej(err);

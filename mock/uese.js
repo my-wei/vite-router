@@ -19,5 +19,17 @@ export default [
             }
         },
     },
+    {
+        url: '/api/login',
+        method: 'get',
+        response: ({ query }) => {
+            return {
+                code: 0,
+                data: {
+                    token: 'vbenssxx11221zz',
+                },
+            }
+        },
+    },
 
 ] 

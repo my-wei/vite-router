@@ -6,3 +6,9 @@ export function info(params) {
         params
     })
 }
+export function login(params) {
+    return http.request({
+        url: "login",
+        params
+    })
+}
