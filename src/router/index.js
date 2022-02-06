@@ -7,7 +7,7 @@
  */
 import { createRouter, createWebHistory } from 'vue-router';
 import layoutRoutes from './autoload';
-console.log(layoutRoutes)
+import guard from '@/router/guard';
 const router = createRouter({
     history: createWebHistory(),
     routes: [...layoutRoutes,
@@ -24,6 +24,7 @@ const router = createRouter({
 
 export function setupRouter(app) {
     app.use(router);
+    guard(router);
 }
 
 
