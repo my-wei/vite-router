@@ -9,9 +9,6 @@ import vue from '@vitejs/plugin-vue';
 import { setupMockPlugin } from './mock';
 export default function setupPlugins(isBuild, env) {
     const plugins = [vue()];
-
-
-
     plugins.push(setupMockPlugin(isBuild));
     return plugins
 }

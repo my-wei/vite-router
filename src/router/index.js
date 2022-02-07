@@ -13,11 +13,11 @@ const router = createRouter({
     routes: [...layoutRoutes,
     {
         path: "/",
-        component: () => import('../layouts/admin.vue'),
-        children: [{
-            path: "admin",
-            component: () => import('../views/home.vue')
-        }]
+        component: () => import('@/views/home.vue'),
+        // children: [{
+        //     path: "admin",
+        //     component: () => import('../views/home.vue')
+        // }]
     }
     ]
 })

@@ -14,11 +14,11 @@ export default {
         }
     },
     get(key) {
-        const item = localstorage.getItem(key);
+        const item = localStorage.getItem(key);
 
         if (item) {
             const data = JSON.parse(item);
-            const exppire = data?.expire;
+            const expire = data?.expire;
             if (expire < new Date().getTime()) {
                 localStorage.removeItem(key);
                 return null;

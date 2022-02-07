@@ -6,11 +6,7 @@
  * @Description: file content
 -->
 <template>
-     <input
-            type="text"
-            placeholder="请输入手机号或邮箱"
-            class="gq-input"
-          />
+  <input type="text" placeholder="请输入手机号或邮箱" class="gq-input" autocomplete='no'/>
 </template>
 
 <style lang="scss" scoped>

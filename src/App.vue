@@ -14,17 +14,6 @@
   </div>
 </template>
 <script setup>
-import {info,login} from '@/api/user';
-// console.log(info());
-
-info().then(res=>{
-  console.log(res);
-})
-
-login().then(res=>{
-  console.log(res);
-})
-
 
 
 </script>

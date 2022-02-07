@@ -6,21 +6,27 @@
  * @Description: file content
  */
 import { useRouter } from 'vue-router';
+import store from '@/utils/store';
 class Guard {
     constructor(router) {
         this.router = router
     }
     run() {
-        console.log(this.router);
         this.router.beforeEach((to, from) => {
-            console.log(to, 123);
-            if (this.isAuthCheck(to) === false) {
+            const token = store.get('token');
+            if (this.isLogin(to, token) === false) {
                 return { name: "login" }
             }
+            if(this.isGuest(to,token)===false)return {from}
         })
     }
-    isAuthCheck(route) {
-
+    isGuest(route, token) {
+        // console.log(route,token)
+        // console.log( Boolean(!route.meta.guest || (route.meta.guest && !token)))
+        // return Boolean(!route.meta.guest || (route.meta.guest && !token))
+    }
+    isLogin(route, token) {
+        return Boolean(!route.meta.auth || (route.meta.auth && token))
     }
 }
 export default (router) => {
