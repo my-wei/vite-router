@@ -15,22 +15,27 @@
         </div>
         <MenuComponent />
       </div>
-      <div class="content flex-1 bg-gray-200">
-          <NavbarComponent />
-        <router-view></router-view>
+      <div class="content flex-1 bg-gray-100">
+        <NavbarComponent />
+        <HistoryLink />
+        <div class="m-3 p-5 bg-white">
+          <router-view></router-view>
+        </div>
       </div>
     </div>
   </div>
 </template>
 <script setup>
-import MenuComponent from './admin/menu.vue';
-import NavbarComponent from './admin/navbar.vue';
+import MenuComponent from "./admin/menu.vue";
+import NavbarComponent from "./admin/navbar.vue";
+import HistoryLink from "./admin/historyLink.vue";
 </script>
 <script>
 export default {
   route: {
     name: "admin",
     meta: { guest: true },
+    redirect:"/admin/home"
   },
 };
 </script>
