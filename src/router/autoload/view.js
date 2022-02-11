@@ -5,8 +5,8 @@
  * @LastEditTime: 2022-02-05 22:56:48
  * @Description: file content
  */
-const layouts = import.meta.globEager('../layouts/*.vue');
-const views = import.meta.globEager('../views/**/*.vue');
+const layouts = import.meta.globEager('../../layouts/*.vue');
+const views = import.meta.globEager('../../views/**/*.vue');
 import { env } from '@/utils';
 function getRoutes() {
     const layoutRoutes = []
@@ -24,7 +24,7 @@ function getChildrenRoutes(layoutRoute) {
 
     const routes = [];
     Object.entries(views).forEach(([file, module]) => {
-        if (file.includes(`../views/${layoutRoute.name}`)) {
+        if (file.includes(`../../views/${layoutRoute.name}`)) {
 
             const route = getRouteByModule(file, module);
             routes.push(route);

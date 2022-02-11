@@ -6,7 +6,7 @@
  * @Description: file content
  */
 import { createRouter, createWebHistory } from 'vue-router';
-import layoutRoutes from './autoload';
+import layoutRoutes from './autoload/view';
 import guard from '@/router/guard';
 const router = createRouter({
     history: createWebHistory(),
