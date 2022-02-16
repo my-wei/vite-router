@@ -2,7 +2,7 @@
  * @Author: gq
  * @Date: 2022-01-23 19:57:41
  * @LastEditors: gq
- * @LastEditTime: 2022-02-06 01:13:04
+ * @LastEditTime: 2022-02-17 00:00:14
  * @Description: file content
 -->
 <template>
@@ -32,11 +32,11 @@ import HistoryLink from "./admin/historyLink.vue";
 </script>
 <script>
 export default {
-  route: {
-    name: "admin",
-    meta: { guest: true },
-    redirect:"/admin/home"
-  },
+  // route: {
+  //   name: "admin",
+  //   meta: { guest: true },
+  //   redirect:"/admin/home"
+  // },
 };
 </script>
 

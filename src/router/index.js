@@ -2,23 +2,27 @@
  * @Author: gq
  * @Date: 2022-01-17 22:44:56
  * @LastEditors: gq
- * @LastEditTime: 2022-01-19 18:52:47
+ * @LastEditTime: 2022-02-17 00:02:05
  * @Description: file content
  */
 import { createRouter, createWebHistory } from 'vue-router';
-import layoutRoutes from './autoload/view';
+import routes from './autoload';
 import guard from '@/router/guard';
+
 const router = createRouter({
     history: createWebHistory(),
-    routes: [...layoutRoutes,
-    {
-        path: "/",
-        component: () => import('@/views/home.vue'),
-        // children: [{
-        //     path: "admin",
-        //     component: () => import('../views/home.vue')
-        // }]
-    }
+    routes: [
+        ...routes,
+
+        {
+            path: "/",
+            component: () => import('@/views/home.vue'),
+            children: [{
+                path: "admin",
+                component: () => import('../views/home.vue')
+            }]
+        },
+
     ]
 })
 

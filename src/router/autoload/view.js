@@ -2,7 +2,7 @@
  * @Author: gq
  * @Date: 2022-01-17 22:44:56
  * @LastEditors: gq
- * @LastEditTime: 2022-02-05 22:56:48
+ * @LastEditTime: 2022-02-16 23:01:12
  * @Description: file content
  */
 const layouts = import.meta.globEager('../../layouts/*.vue');
@@ -50,5 +50,5 @@ function getRouteByModule(file, module) {
 }
 
 
-const routes = env.VITE_ROUTE_AUTOLOAD ? getRoutes() : [];
-export default routes;
+const getMyRoutes = env.VITE_ROUTE_AUTOLOAD ? getRoutes() : [];
+export default getMyRoutes;

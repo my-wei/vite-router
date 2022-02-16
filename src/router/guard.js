@@ -2,7 +2,7 @@
  * @Author: gq
  * @Date: 2022-02-05 23:22:14
  * @LastEditors: gq
- * @LastEditTime: 2022-02-06 01:28:34
+ * @LastEditTime: 2022-02-16 23:54:50
  * @Description: file content
  */
 import { useRouter } from 'vue-router';
@@ -13,11 +13,12 @@ class Guard {
     }
     run() {
         this.router.beforeEach((to, from) => {
+
             const token = store.get('token');
             if (this.isLogin(to, token) === false) {
                 return { name: "login" }
             }
-            if(this.isGuest(to,token)===false)return {from}
+            if (this.isGuest(to, token) === false) return { from }
         })
     }
     isGuest(route, token) {
