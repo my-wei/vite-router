@@ -1,0 +1,51 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\ui\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js add pinia
+
+PATH: 
+  C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Java\jdk1.8.0_181\bin;C:\Program Files\Java\jdk1.8.0_181\jre\bin;C:\Program Files\apache-maven-3.6.1\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;C:\Users\ui\AppData\Roaming\npm;%NODE_PATH%;C:\Program Files\nodejs\;D:\微信web开发者工具\dll;C:\Pro;ram Files\TortoiseGit\bin;C:\Program Files\Git\cmd;C:\Users\ui\.app\;C:\Users\ui\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\MySQL\MySQL Server 8.0\bin;;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;C:\Users\ui\AppData\Roaming\npm
+
+Yarn version: 
+  1.22.17
+
+Node version: 
+  14.17.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\ui\AppData\Local\Yarn\Cache\v6\npm-ansi-styles-3.2.1-41fbb20243e50b12be0f04b8dedbf07520ce841d-integrity\node_modules\ansi-styles\package.json' -> 'C:\Users\ui\Desktop\vite-router\node_modules\@babel\highlight\node_modules\ansi-styles\package.json'
+
+npm manifest: 
+  {
+    "name": "router",
+    "version": "0.0.0",
+    "scripts": {
+      "dev": "vite",
+      "build": "vite build",
+      "preview": "vite preview"
+    },
+    "dependencies": {
+      "axios": "^0.25.0",
+      "element-plus": "^2.0.1",
+      "loadsh": "^0.0.4",
+      "mockjs": "^1.1.0",
+      "vue": "^3.2.25",
+      "vue-router": "^4.0.12"
+    },
+    "devDependencies": {
+      "@vitejs/plugin-vue": "^2.0.0",
+      "autoprefixer": "^10.4.2",
+      "postcss": "^8.4.5",
+      "sass": "^1.49.7",
+      "tailwindcss": "^3.0.15",
+      "vite": "^2.7.2",
+      "vite-plugin-mock": "^2.9.6"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
