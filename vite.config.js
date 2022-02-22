@@ -2,7 +2,7 @@
  * @Author: gq
  * @Date: 2022-01-23 19:57:41
  * @LastEditors: gq
- * @LastEditTime: 2022-01-23 23:09:52
+ * @LastEditTime: 2022-02-22 16:25:11
  * @Description: file content
  */
 import { defineConfig, loadEnv } from 'vite'
@@ -33,6 +33,9 @@ export default ({ command, mode }) => {
     plugins: setupPlugins(isBuild, env),
     resolve: {
       alias,
+    },
+    server: { //开发服务器的配置
+      port: 9999, //更改端口号
     }
   }
 }
