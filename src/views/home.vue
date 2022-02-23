@@ -2,11 +2,7 @@
  * @Author: gq
  * @Date: 2022-01-23 19:57:41
  * @LastEditors: gq
-<<<<<<< HEAD
  * @LastEditTime: 2022-02-19 11:36:05
-=======
- * @LastEditTime: 2022-02-21 17:53:45
->>>>>>> 1cd841afef0d1f8a168e042d9e64cca48861d4a6
  * @Description: file content
 -->
 <template>
@@ -20,14 +16,10 @@
       </h2>
       <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
         <div class="inline-flex rounded-md shadow">
-<<<<<<< HEAD
           <router-link
             :to="{ name: 'admin.home' }"
             class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
           >后台管理</router-link>
-=======
-          <router-link :to="{name:'admin.home'}" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"> 后台管理 </router-link>
->>>>>>> 1cd841afef0d1f8a168e042d9e64cca48861d4a6
         </div>
         <div class="ml-3 inline-flex rounded-md shadow">
           <router-link
@@ -41,10 +33,10 @@
 </template>
 
 <script>
-import {useCounterStore} from '@/store/counter'
+import { useCounterStore } from '@/store/counter'
 export default {
   route: { name: "home" },
-  setup(){
+  setup() {
     const counter = useCounterStore();
     console.log(counter)
   }
