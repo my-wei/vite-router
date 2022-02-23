@@ -2,7 +2,7 @@
  * @Author: gq
  * @Date: 2022-01-23 19:57:41
  * @LastEditors: gq
- * @LastEditTime: 2022-02-16 23:41:41
+ * @LastEditTime: 2022-02-19 11:36:05
  * @Description: file content
 -->
 <template>
@@ -16,13 +16,16 @@
       </h2>
       <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
         <div class="inline-flex rounded-md shadow">
-          <!-- <router-link :to="{name:'admin.home'}" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"> 后台管理 </router-link> -->
+          <router-link
+            :to="{ name: 'admin.home' }"
+            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
+          >后台管理</router-link>
         </div>
         <div class="ml-3 inline-flex rounded-md shadow">
-          <!-- <router-link
+          <router-link
             :to="{ name: 'login' }"
             class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-indigo-600 bg-white hover:bg-indigo-50"
-          >用户登录</router-link>-->
+          >用户登录</router-link>
         </div>
       </div>
     </div>
