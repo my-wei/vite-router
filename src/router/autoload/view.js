@@ -2,7 +2,7 @@
  * @Author: gq
  * @Date: 2022-01-17 22:44:56
  * @LastEditors: gq
- * @LastEditTime: 2022-02-16 23:01:12
+ * @LastEditTime: 2022-02-21 16:08:53
  * @Description: file content
  */
 const layouts = import.meta.globEager('../../layouts/*.vue');
@@ -43,7 +43,7 @@ function getRouteByModule(file, module) {
 
         component: module.default
     }
-    // console.log(module.default);
+    
     //针对页面自定义路由所做选项，可以在页面配置route选项直接改变路由地址 Object.assign(route,module.default?.route) 
     return Object.assign(route, module.default?.route);
 

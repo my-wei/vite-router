@@ -24,6 +24,8 @@
 
 <script setup>
 import { reactive } from "vue";
+import {routerStore} from '@/store/router';
+console.log(routerStore(),"routerStore")
 const menus = reactive([
   {
     title: "错误页面",
